@@ -9,8 +9,8 @@ local LocalPlayer = Players.LocalPlayer
 local Beams = {}
 
 local Colours = {
-    At = ColorSequence.new(Color3.new(255, 192, 203), Color3.new(255, 192, 203)),
-    Away = ColorSequence.new(Color3.new(255, 192, 203), Color3.new(255, 192, 203))
+    At = ColorSequence.new(Color3.new(255, 0, 255), Color3.new(255, 0, 255)),
+    Away = ColorSequence.new(Color3.new(255, 0, 255), Color3.new(255, 0, 255))
 }
 
 -- // Checks if the beam is hitting our character and can't go through walls
@@ -52,8 +52,8 @@ local function CreateBeam(Character: Model)
     Beam.Enabled = Character:FindFirstChild("GunScript", true) ~= nil
 
     -- // Set visual properties
-    Beam.Width0 = 0.50
-    Beam.Width1 = 0.50
+    Beam.Width0 = 0.25
+    Beam.Width1 = 0.25
 
     -- // Add to beam table so can modify all at once
     table.insert(Beams, Beam)
