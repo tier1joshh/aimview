@@ -48,7 +48,7 @@ local function CreateBeam(Character: Model)
     local Beam = Instance.new("Beam", Character)
 
     -- // Set important properties
-    Beam.Attachment0 = Character:WaitForChild("UpperTorso"):WaitForChild("FaceCenterAttachment")
+    Beam.Attachment0 = Character:WaitForChild("HumanoidRootPart"):WaitForChild("FaceCenterAttachment")
     Beam.Enabled = Character:FindFirstChild("GunScript", true) ~= nil
 
     -- // Set visual properties
